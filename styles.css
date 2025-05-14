@@ -315,13 +315,24 @@ ul {
 }
 
 .profile-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
-    box-shadow: var(--box-shadow);
-    position: relative;
-    z-index: 2;
-}
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* makes it a perfect circle */
+    object-fit: cover;  /* ensures it fills the circle */
+    opacity: 0.9; /* slight transparency */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* smooth animation */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* subtle floating shadow */
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05) translateY(-5px); /* slight zoom and lift */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+  }
+  
 
 .decoration-circle {
     position: absolute;
@@ -713,7 +724,19 @@ ul {
         opacity: 1;
     }
 }
-
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .profile-img:hover {
+    animation: bounce 0.6s ease;
+  }
+  
 /* Responsive Styles */
 @media (max-width: 992px) {
     .hero .container,
