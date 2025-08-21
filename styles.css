@@ -2,7 +2,7 @@
 
 /* This targets the entire page */
 body {
-    background-color: #1a1a1a; /* A dark charcoal color */
+    background-color: #1a1a1a !important; /* A dark charcoal color */
     color: #e0e0e0;           /* A soft, off-white for text */
 }
 
@@ -32,7 +32,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Optional: makes text white if background is dark */
   }
   
   body::before {
