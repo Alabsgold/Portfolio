@@ -1,3 +1,4 @@
+AOS.init();
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
