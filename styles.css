@@ -1,3 +1,28 @@
+/* --- Dark Theme Start --- */
+
+/* This targets the entire page */
+body {
+    background-color: #1a1a1a; /* A dark charcoal color */
+    color: #e0e0e0;           /* A soft, off-white for text */
+}
+
+/* This will make sure your headings are also light */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Pure white for strong headlines */
+}
+
+/* This ensures your links are visible and have a distinct color */
+a {
+    color: #FFD700; /* A gold color for links */
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+/* This makes links slightly brighter when you hover over them */
+a:hover {
+    color: #ffeb80;
+}
+
+/* --- Dark Theme End --- */
 body {
     background-image: url("images/background.jpg");
     background-size: cover;
