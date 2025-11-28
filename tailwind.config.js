@@ -15,7 +15,7 @@ export default {
         'dark-text': '#333333',
       },
       fontFamily: {
-        'sans': ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        'sans': ['Outfit', 'sans-serif'],
       },
     },
   },
