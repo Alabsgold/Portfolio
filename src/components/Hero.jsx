@@ -16,17 +16,13 @@ const Hero = ({ name, title, description }) => (
             </div>
             <div className="md:w-1/2 flex justify-center">
                 <div className="relative">
-                    <picture>
-                        <source srcSet="images/logo.webp" type="image/webp" />
-                        <source srcSet="images/logo.jpg" type="image/jpeg" />
-                        <img
-                            src="images/logo.jpg"
-                            alt={name}
-                            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg animated-glow relative z-10"
-                            loading="eager"
-                            fetchPriority="high"
-                        />
-                    </picture>
+                    <img
+                        src="images/logo.jpg"
+                        alt={name}
+                        className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg animated-glow relative z-10"
+                        loading="eager"
+                        fetchPriority="high"
+                    />
                     <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-accent rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-12 z-0 opacity-20 blur-3xl"></div>
                 </div>
             </div>

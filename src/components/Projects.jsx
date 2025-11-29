@@ -9,16 +9,12 @@ const Projects = ({ projects, setModalData }) => (
                 {projects.map((project, index) => (
                     <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-primary/50 hover-lift group">
                         <div className="relative overflow-hidden">
-                            <picture>
-                                <source srcSet={`${project.image.replace('.jpg', '.webp')}`} type="image/webp" />
-                                <source srcSet={project.image} type="image/jpeg" />
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
-                                    loading="lazy"
-                                />
-                            </picture>
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                                loading="lazy"
+                            />
                             <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <button onClick={() => setModalData(project)} className="text-dark-text text-sm font-bold bg-primary px-4 py-2 rounded-full hover:bg-secondary transform hover:scale-105 transition-transform">View Case Study</button>
                                 <a href={project.codeUrl} className="text-light-text text-sm font-bold bg-gray-900 border border-gray-700 px-4 py-2 rounded-full hover:bg-black transform hover:scale-105 transition-transform">View Code</a>

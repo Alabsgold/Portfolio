@@ -6,11 +6,7 @@ const About = ({ experience, education }) => (
             <div className="md:w-1/2">
                 <div className="relative">
                     <div className="absolute inset-0 bg-primary rounded-lg transform translate-x-4 translate-y-4 opacity-20"></div>
-                    <picture>
-                        <source srcSet="images/about.webp" type="image/webp" />
-                        <source srcSet="images/about.jpg" type="image/jpeg" />
-                        <img src="images/about.jpg" alt="About" className="rounded-lg shadow-xl relative z-10 w-full" loading="lazy" />
-                    </picture>
+                    <img src="images/about.jpg" alt="About" className="rounded-lg shadow-xl relative z-10 w-full" loading="lazy" />
                 </div>
             </div>
             <div className="md:w-1/2">
